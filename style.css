@@ -1,76 +1,156 @@
-* {    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
-    text-align: center;
-    font-family: "Inter", sans-serif;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  /* display: block; */
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+img,
+h2,
+h5,
+p,
+button {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: hsl(0, 0%, 8%);
-    color: hsl(0, 0%, 100%);
-}
-
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
-
-.main {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  display: grid;
+  place-content: center;
+  font-family: "Inter", sans-serif;
+  text-align: center;
 }
 
 .box {
-    background-color: hsl(0, 0%, 12%);
-    height: 600px;
-    width: 370px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    padding: 40px;
+  background-color: hsl(0, 0%, 12%);
+  max-width: 23rem;
+  margin-bottom: 1rem;
+  border-radius: 0.6rem;
+  padding: 2.5rem;
 }
 
-img {
-    height: 85px;
-    width: 85px;
-    border-radius: 50%;
-    margin-bottom: 25px;
+.box img {
+  max-width: 5rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
 }
 
-h2 {
-    color: hsl(0, 0%, 100%);
-    margin-bottom: 10px;
+#location {
+  margin-top: 0.5rem;
+  color: hsl(75, 94%, 57%);
 }
 
-h5 {
-    color: hsl(75, 94%, 57%);
-    margin-bottom: 25px;
+.box p {
+  font-size: 0.85em;
+  margin-top: 1.5rem;
 }
 
-p {
-    font-size: 14px;
-    margin-bottom: 16px;
+.box button {
+  background-color: hsl(0, 0%, 20%);
+  color: inherit;
+  margin-top: 1rem;
+  padding: 0.8rem 0;
+  border: none;
+  border-radius: 0.6rem;
+  width: 100%;
 }
 
-button {
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 100%);
-    margin: 8px 0;
-    padding: 14px 90px;
-    border: none;
-    border-radius: 10px;
-    width: 100%;
-    cursor: pointer;
+.box button:hover {
+  cursor: pointer;
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
 }
 
-button:hover {
-    background-color: hsl(75, 94%, 57%);
-    color: hsl(0, 0%, 12%);
+.attribution {
+  font-size: 0.8em;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
