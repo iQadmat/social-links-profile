@@ -18,7 +18,7 @@
 ### Links
 
 - Solution URL: [Solution Page](https://www.frontendmentor.io/solutions/social-links-profile-c77QwCMDgd)
-- Live Site URL: [Deployment](https://iqadmat.github.io/social-links-profile/)
+- Live Site URL: [Deployment](https://iqadmat-social-links-profile.netlify.app/)
 
 ## My process
 
