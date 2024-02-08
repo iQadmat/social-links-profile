@@ -98,7 +98,6 @@ button {
 }
 
 body {
-  overflow: hidden;
   background-color: hsl(0, 0%, 8%);
   color: hsl(0, 0%, 100%);
   display: grid;
