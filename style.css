@@ -88,11 +88,7 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-img,
-h2,
-h5,
-p,
-button {
+* {
   margin: 0;
   padding: 0;
 }
@@ -106,50 +102,52 @@ body {
   text-align: center;
 }
 
-.box {
+main section {
   background-color: hsl(0, 0%, 12%);
   max-width: 23rem;
-  margin-bottom: 1rem;
-  border-radius: 0.6rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
   padding: 2.5rem;
 }
 
-.box img {
+section img {
   max-width: 5rem;
   border-radius: 50%;
   margin-bottom: 1.5rem;
 }
 
-#location {
+section h5 {
   margin-top: 0.5rem;
   color: hsl(75, 94%, 57%);
+  margin-bottom: 1.5rem;
 }
 
-.box p {
+section p {
   font-size: 0.85em;
-  margin-top: 1.5rem;
 }
 
-.box button {
+section button {
   background-color: hsl(0, 0%, 20%);
   color: inherit;
+  width: 100%;
   margin-top: 1rem;
   padding: 0.8rem 0;
   border: none;
-  border-radius: 0.6rem;
-  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
-.box button:hover {
+button:hover {
   cursor: pointer;
   background-color: hsl(75, 94%, 57%);
   color: hsl(0, 0%, 12%);
 }
 
-.attribution {
+.footer {
   font-size: 0.8em;
 }
 
-.attribution a {
+.footer a {
   color: hsl(228, 45%, 44%);
 }
